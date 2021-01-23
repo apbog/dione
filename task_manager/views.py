@@ -9,6 +9,11 @@ class CreateTask(generics.CreateAPIView):
     serializer_class = TaskSerializer
 
 
+class ListCreateTask(generics.ListCreateAPIView):
+    serializer_class = TaskSerializer
+    queryset = Task.objects.all()
+
+
 class ListTask(generics.ListAPIView):
     serializer_class = TaskSerializer
     queryset = Task.objects.all()

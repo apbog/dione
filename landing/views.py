@@ -8,3 +8,7 @@ def home_page(request):
 
 def landing_page(request):
     return render(request, 'landing/start.html')
+
+
+def product_page(request):
+    return render(request, 'landing/product.html')

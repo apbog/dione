@@ -6,7 +6,6 @@ from rest_framework import generics
 from task_manager.models import Task
 
 
-# Create your views here.
 @method_decorator(login_required, name='dispatch')
 class CreateTask(generics.CreateAPIView):
     serializer_class = TaskSerializer

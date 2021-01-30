@@ -11,3 +11,4 @@ class TaskAdmin(admin.ModelAdmin):
     search_fields = ('title', 'text')
     date_hierarchy = 'created'
     readonly_fields = ('created', 'created_by')
+    # TODO: Add new field to ADM

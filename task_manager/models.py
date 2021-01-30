@@ -7,6 +7,7 @@ class Task(models.Model):
     text = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
     created_by = models.ForeignKey(User, editable=False, null=True, blank=True, on_delete=models.CASCADE)
+    # TODO: Add is_active field
 
     def __str__(self):
         return self.title

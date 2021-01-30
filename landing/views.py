@@ -11,3 +11,5 @@ def landing_page(request):
 
 def product_page(request):
     return render(request, 'landing/product.html')
+
+# TODO: Add views to Task objects

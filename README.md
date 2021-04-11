@@ -5,3 +5,5 @@ Python Django Project
 2. task manager
 
 Created by apbog
+
+Python 3.9.1

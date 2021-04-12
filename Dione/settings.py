@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'landing',
     'task_manager',
     'rest_framework',
+    'django_registration',
 ]
 
 MIDDLEWARE = [

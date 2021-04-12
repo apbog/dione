@@ -18,9 +18,10 @@ from django.urls import path, include
 from django.views.generic import RedirectView
 
 urlpatterns = [
+    path('accounts/', include('django_registration.backends.one_step.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
     path('', RedirectView.as_view(url='home/')),
     path('admin/', admin.site.urls),
     path('api/v1/task_manager/', include('task_manager.urls')),
     path('home/', include('landing.urls')),
-    path('', include('django.contrib.auth.urls')),
 ]

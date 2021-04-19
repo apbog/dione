@@ -1,4 +1,4 @@
-# Dione
+# Dione Task manager
 Python Django Project
 
 1. landing
